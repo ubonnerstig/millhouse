@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
+
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #60495A;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+/*------------------------------------*\
+   POST ULRICA
+\*------------------------------------*/
+
+.error {
+	color: #e60000;
+    font-size: 0.8rem;
+}
+
+.error-outline {
+	box-shadow: 0px 0px 5px 2px #e60000; 
+    font-size: 0.8rem;
+}
+
+#editor{
+	height: 20rem;
+	background-color: #ffffff;
+}
+
+.image_container {
+	height: 10rem;
+	width: 10rem;
+	overflow: hidden;
+	position: relative;
+	margin-left: 0.2rem;
+}
+
+.image_container img {
+	object-fit: contain;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.image_container .close {
+	position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+}
+
+.blog-image-frame{
+	height: 30rem;
+	max-width: 30rem;
+	overflow: hidden;
+	position: relative;
+	margin-left: 0.2rem;
+}
+
+.blog-image-frame img {
+	object-fit: contain;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/*
+span {
+    display: none;
+}
+  */
+
+.post_wrap {
+	margin: 0 auto;
+	max-width: 60rem;
+}
+
+.post_title {
+	font-size: 2rem;
+	padding-left: 0.5rem;
+}
+
+.btn-primary{
+	background-color: #60495A;
+	border-color: #252525;
+}
+
+.btn-primary:hover{
+	background-color: #D7BCC8;
+	border-color: #FAC8CD;
+}
+
+button.save {
+	background-color: rgb(124, 124, 124);
+}
+
+.fa-image{
+	font-size: 1.5rem;
+}
+
+/* HIDE RADIO */
+.choose_image { 
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+  /* IMAGE STYLES */
+.choose_image + div {
+	cursor: pointer;
+}
+  
+  /* CHECKED STYLES */
+.choose_image:checked + div {
+	outline: 2px solid #FAC8CD;
+	box-shadow: 0px 0px 5px 2px #FAC8CD; 
+}
+
+
+/*------------------------------------*\
+   END POST
+\*------------------------------------*/
+
+
+#single-post-page .blog-image-frame{
+    margin: 2rem 0;
+}
+
+a:hover {
+    color: #60495A;
+    text-decoration: underline;
+}
+.single-post-container{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+#single-post-page .no_post{
+    margin: 4rem;
+}
+
+#single-post-page .no_post>.card{
+    padding: 4rem;
+}
+
+#single-post-page h1{
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+
+#single-post-page h2{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+#single-post-page h3{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+
+#single-post-page p, #single-post-page .admin-link{
+    padding: 0 1rem;
+}
+
+#single-post-page .fa-user{
+    font-size: 1rem;
+}
+
+#description{
+    background-color: #FFF;
+    padding: 1.5rem 1rem; 
+    border-radius: .1rem;
+}
+
+#single-post-page .card{
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+/*------------------------------------*\
+   MAIN PAGE - SHERIE
+\*------------------------------------*/
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(white, whitesmoke, lightgrey);
+}
+
+/* NAVIGATION BAR - SHERIE */
+
+.navbar-default {
+    background-color: #f0f0f0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.navbarLogo {
+    height: 3rem;
+    width: 4rem;
+    padding: 1vh;
+}
+
+.navbar-default .navbar_options .nav-item {
+    font-size: 1.1em;
+    margin-right: 110px;
+    margin-left: 30px;
+    font-family: 'Merriweather', serif;
+    color: #60495A;
+}
+
+.navbar-default .loginButton {
+   margin-right: 15px;
+    background-color: seashell;
+
+}
+
+.navbar-default .btn-default {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px ;
+    background-color:#f0f0f0 ;
+}
+
+/* HERO HEADER - SHERIE */
+
+.hero_header {
+    background: url("../images/jan-de-keijzer-1136069-unsplash.jpg");
+    background-position: center;
+    height: 90vh;
+    background-size:80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroLogo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+
+}
+
+
+.hero_header h2 {
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    transform: translate(-70%, -53%);
+    font-size: 5em;
+    color: #f0f0f0;
+}
+
+/* MAIN POST CONTENT - SHERIE */
+
+.post_section {
+    padding: 30px;
+    align-content: center;
+}
+
+.latest_featured_article img  {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+
+}
+
+.featured_articles img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 60px;
+    right: 120px;
+    background: rgba(240, 240, 240, 0.7);   color:#60495A ;
+    font-size: .8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-block h4 {
+    font-size: 1.5rem;
+}
+
+/* ==========================================================================
+index.php styling Morgan
+========================================================================== */
+
+.hero_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body_index {
+    height: 200%;
+    background-color: #f0f0f0;
+}
+
+.form_index {
+    margin: auto;
+    max-width:50%;
+    margin-top: 5%;
+    text-align: right;
+
+}
+
+footer {
+    margin: auto;
+    margin-top: 10%;
+    width: 100%;
+    text-align:center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 920px ){
+    .inner-container{
+        margin-top: 100px;
+    }
+    .form_index {
+        margin: auto;
+        max-width:50%;
+        margin-top: 5%;
+        text-align: right;
+
+    }
+}
+@media only screen and (max-width: 540px ) {
+
+    .hero_header {
+        height: 30vh;
+    }
+
+    .inner-container {
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .hero_header hr {
+        width: 40vh;
+        height: 2px;
+    }
+
+    .text-block {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        font-size: 0.2em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/**/
+/**/
+
